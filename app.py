@@ -76,8 +76,3 @@ if uploaded_file is not None:
         st.success(f"Prediction: **{label}**")
         st.info(f"Confidence: **{confidence:.2%}**")
 
-# ------------------------------------
-# Footer
-# ------------------------------------
-st.markdown("---")
-st.caption("Built with ❤️ using TensorFlow, MobileNetV2 & Streamlit")
