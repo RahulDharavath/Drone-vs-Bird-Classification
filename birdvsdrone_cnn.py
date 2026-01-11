@@ -269,11 +269,11 @@ lr_scheduler = ReduceLROnPlateau(
 
 # Commented out IPython magic to ensure Python compatibility.
 # %%time
-# history = model.fit(train_ds,
-#                     epochs = 35,
-#                     validation_data = validation_ds,
-#                     callbacks= [callback, lr_scheduler])
-#
+history = model.fit(train_ds,
+                     epochs = 35,
+                     validation_data = validation_ds,
+                     callbacks= [callback, lr_scheduler])
+
 
 
 loss, acc, prec, rec, auc_score = model.evaluate(validation_ds)
